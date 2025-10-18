@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevMani - Professional Profile</title>
+  <meta name="description" content="DevMani - Senior Full-Stack Developer specializing in modern web technologies and user experience design.">
+  <meta name="keywords" content="web developer, full-stack developer, JavaScript, React, Node.js, professional profile">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="container">
+    <article data-testid="test-profile-card" class="profile-card">
+      <!-- Header Section -->
+      <header class="profile-header">
+        <div class="avatar-container">
+          <figure class="avatar">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+              alt="DevMani Profile Picture" 
+              data-testid="test-user-avatar"
+            />
+            
+            <div class="status-indicator"></div>
+          </figure>
+        </div>
+        
+        <div class="profile-info">
+          <h1 data-testid="test-user-name" class="profile-name">Manifesto</h1>
+          <p class="profile-title">Frontend Developer</p>
+          <p class="profile-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lagos, Nigeria
+          </p>
+        </div>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="bio-section">
+        <p data-testid="test-user-bio" class="bio-text">
+          I'm a forward-thinking web developer passionate about building clean, responsive UIs and crafting interactive user experiences. With expertise in modern web technologies and a focus on performance optimization.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">TypeScript</span>
+          
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience-section">
+        <h3 class="section-title">Experience</h3>
+        <div class="experience-item">
+          <div class="experience-header">
+            <h4>Frontend Developer</h4>
+            <span class="experience-period">2022 - Present</span>
+          </div>
+          <p class="experience-company">Tech Solutions Inc.</p>
+          <p class="experience-description">Leading development of scalable web applications.</p>
+        </div>
+      </section>
+
+      <!-- Current Time Display -->
+      <section class="time-section">
+        <div class="time-display">
+          <i class="fas fa-clock"></i>
+          <span class="time-label">Current Time:</span>
+          <span data-testid="test-user-time" id="user-time" class="time-value"></span>
+        </div>
+      </section>
+
+      <!-- Social Links -->
+      <nav aria-label="Social Links" class="social-section">
+        <h3 class="section-title">Connect With Me</h3>
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" class="social-link twitter">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Manifestomixx" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" class="social-link github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sundayjoshua/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" class="social-link linkedin">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Interests Section -->
+      <section class="interests-section">
+        <div class="interests-grid">
+          <div class="interest-category">
+            <h3 class="interest-title">
+              <i class="fas fa-heart"></i>
+              Interests
+            </h3>
+            <ul data-testid="test-user-hobbies" class="interest-list">
+              <li><i class="fas fa-code"></i> Coding</li>
+              <li><i class="fas fa-music"></i> Music</li>
+              <li><i class="fas fa-book"></i> Reading tech blogs</li>
+            </ul>
+          </div>
+          
+          <div class="interest-category">
+            <h3 class="interest-title">
+              <i class="fas fa-times-circle"></i>
+              Pet Peeves
+            </h3>
+            <ul data-testid="test-user-dislikes" class="interest-list">
+              <li><i class="fas fa-wifi"></i> Slow Wi-Fi</li>
+              <li><i class="fas fa-file-alt"></i> Unclear documentation</li>
+              <li><i class="fas fa-bug"></i> Messy code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <a href="mailto:manifestomixx@gmail.com?subject=Professional Inquiry - Portfolio Contact&body=Hello DevMani,%0D%0A%0D%0AI came across your professional profile and would like to discuss potential opportunities.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]" class="contact-btn">
+          <i class="fas fa-envelope"></i>
+          Get In Touch
+        </a>
+      </section>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
